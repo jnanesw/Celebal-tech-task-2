@@ -1,38 +1,141 @@
-.App {
+html{
+  height: 100%;
+}
+body{
+  
+  background-image: url(https://wac-cdn-2.atlassian.com/image/upload/f_auto,q_auto/dam/jcr:b66923ed-c124-471d-89a1-efba75618380/Hero_BackgroundGraphic.svg?cdnVersion=1074), linear-gradient(180deg, #C9F2FF 0%, #E6FCFF 96.63%);
+  background-repeat: no-repeat , no-repeat;
+  background-size:cover;
+}
+p#line1{
+  font-size: 200%;
+  font-family: "Mija,-apple-system,BlinkMacSystemFont,Roboto,roboto slab,droid serif,segoe ui,system-ui,Arial,sans-serif";
+  background-image: var(--rainbow-gradient,#0c0c0c);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  filter: drop-shadow(0 0 2rem #5f0ff3);
+  text-shadow: none!important;
+}
+.left-container{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+li#new-item{
+  list-style-type: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+form #input{
+  margin-top:25px ;
+  width :375px;
+  height: 40px;
+  padding:4px;
+  border-radius: 5px;
+  border-bottom: px solid;
+  border-top: 1px;
+  border-right: 1px;
+  border-left: 1px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+form button{
+  font-size: 100%;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+  margin-top:25px ;
+  width :8%;
+  margin-left: 5px;
+  height: 48px;
+  padding:4px;
+  border-radius: 5px;
+  border-bottom: px solid;
+  border-top: 1px;
+  border-right: 1px;
+  border-left: 1px;
+}
+form button:hover{
+  background-color: black;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+input::placeholder{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+  font-size: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+div.displaying-items{
+  margin-left: 29%;
+  margin-bottom: 1%;
+  padding-top: 0.1%;
+  border-radius: 8px;
+  background-color: rgb(223, 217, 217);
+  width:40%;
+  height:60px;
+
+  /* ---------------------------- */
+  cursor: pointer;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  margin-top: 2%;
+  font-size: 20px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+}
+
+div.displaying-items li{
+  margin-right: 50%;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+}
+div#button-container {
+  display: flex;
+}
+div#button-container #edit{
+  margin-left: 10%;
+  /* margin-right: */
+  font-size: 15px;
+  width: 100%;
+  height: 40px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+}
+div#button-container #edit2{
+  width: 100%;
+  height: 40px;
+  margin-left: 10%;
+  margin-right: 1%;
+  font-size: 15px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+}
+
+div#button-container #edit:hover{
+  background-color: black;
+  color: white;
+}
+div#button-container #edit2:hover{
+  background-color: black;
+  color: white;
+}
+div#editing-text{
+  display: flex;
+}
+div#editing-text input{
+  margin-left:29% ;
+  width :430px;
+  height: 40px;
+  padding:4px;
+  border-radius: 5px;
+  border-bottom: px solid;
+  border-top: 1px;
+  border-right: 1px;
+  border-left: 1px;
+}
+
+div#editing-text button{
+  font-size: 100%;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+  /* margin-top:25px ; */
+  width :10%;
+  margin-left: 8px;
+  height: 48px;
+  padding:4px;
+  border-radius: 5px;
+  border-bottom: px solid;
+  border-top: 1px;
+  border-right: 1px;
+  border-left: 1px;
 }
